@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMARASTORE | Boutique de moda femenina en Valencia</title>
+    <meta
+      name="description"
+      content="SIMARASTORE es una boutique de moda femenina en Valencia con selecci&oacute;n cuidada, atenci&oacute;n personalizada y una experiencia de compra cercana."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ClothingStore",
+        "name": "SIMARASTORE",
+        "description": "Boutique de moda femenina en Valencia con atenci\u00f3n personalizada y selecci\u00f3n cuidada.",
+        "telephone": "+34 963 70 74 09",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle d'Albacete, 13",
+          "addressLocality": "Valencia",
+          "postalCode": "46007",
+          "addressCountry": "ES"
+        },
+        "areaServed": "Valencia",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Monday",
+            "opens": "17:30",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "10:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "17:30",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "11:00",
+            "closes": "14:00"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio de SIMARASTORE">
+          <img
+            class="brand-logo"
+            src="assets/simara-wordmark-header.svg"
+            alt="SIMARASTORE"
+            width="200"
+            height="62"
+          />
+        </a>
+
+        <nav class="site-nav" aria-label="Navegaci&oacute;n principal">
+          <a href="#esencia">Esencia</a>
+          <a href="#boutique">Boutique</a>
+          <a href="#visita">Visita</a>
+        </nav>
+
+        <a
+          class="header-cta"
+          href="tel:+34963707409"
+          aria-label="Llamar al +34 963 70 74 09"
+        >
+          Llamar
+        </a>
+      </header>
+
+      <main>
+        <section class="hero" id="inicio">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Boutique de moda femenina en Valencia</p>
+            <h1>Moda con intenci&oacute;n. Atenci&oacute;n con alma.</h1>
+            <p class="hero-text">
+              SIMARASTORE re&uacute;ne prendas seleccionadas con gusto, calidad y
+              cercan&iacute;a para clientas que quieren comprar sin prisas y con
+              asesoramiento real.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="button primary"
+                href="tel:+34963707409"
+                aria-label="Llamar al +34 963 70 74 09"
+              >
+                Llamar ahora
+              </a>
+              <a
+                class="button secondary"
+                href="https://www.google.com/maps/search/?api=1&query=SIMARASTORE%20Calle%20d'Albacete%2013%2046007%20Valencia"
+                target="_blank"
+                rel="noreferrer"
+              >
+                C&oacute;mo llegar
+              </a>
+            </div>
+
+            <ul class="hero-badges" aria-label="Puntos fuertes de la tienda">
+              <li>Moda local y de proximidad</li>
+              <li>Selecci&oacute;n cuidada</li>
+              <li>Atenci&oacute;n personalizada</li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" data-reveal>
+            <div class="panel panel-top">
+              <p class="panel-kicker">Experiencia boutique</p>
+              <h2>Una tienda pensada para descubrir piezas con personalidad.</h2>
+            </div>
+
+            <div class="panel-grid">
+              <article class="info-card highlight" data-reveal>
+                <span class="stat-value">5.0</span>
+                <span class="stat-label">Valoraci&oacute;n destacada en Google Maps</span>
+              </article>
+
+              <article class="info-card" data-reveal>
+                <p class="card-label">Ubicaci&oacute;n</p>
+                <p class="card-text">
+                  Calle d'Albacete, 13<br />
+                  Extramurs, 46007 Valencia
+                </p>
+              </article>
+
+              <article class="info-card accent" data-reveal>
+                <p class="card-label">Atenci&oacute;n</p>
+                <p class="card-text">
+                  Asesoramiento cercano, sincero y totalmente personalizado.
+                </p>
+              </article>
+
+              <article class="info-card status-card" data-reveal>
+                <p class="card-label">Horario de hoy</p>
+                <p class="card-text" id="today-hours">Cargando horario...</p>
+                <p class="open-status" id="open-status">Consultando estado...</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="section gallery-section"
+          id="boutique"
+          aria-label="Im&aacute;genes de la tienda"
+        >
+          <div class="gallery-stage">
+            <figure class="gallery-card gallery-card-store" data-reveal>
+              <img
+                src="assets/simara-storefront.svg"
+                alt="Fachada de la boutique SIMARASTORE en Valencia"
+                loading="lazy"
+                width="1200"
+                height="860"
+              />
+            </figure>
+
+            <figure class="gallery-card gallery-card-logo" data-reveal>
+              <img
+                src="assets/simara-wordmark.svg"
+                alt="Logo de SIMARASTORE"
+                loading="lazy"
+                width="820"
+                height="820"
+              />
+            </figure>
+
+            <div class="gallery-glow gallery-glow-left" aria-hidden="true"></div>
+            <div class="gallery-glow gallery-glow-right" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <section class="section story" id="esencia">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">La esencia de la marca</p>
+            <h2>Una alternativa elegante a la moda r&aacute;pida.</h2>
+            <p>
+              SIMARASTORE apuesta por una compra m&aacute;s consciente: prendas escogidas
+              con criterio, un espacio acogedor y un trato que convierte cada visita
+              en una experiencia.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card" data-reveal>
+              <span class="feature-index">01</span>
+              <h3>Selecci&oacute;n con gusto</h3>
+              <p>
+                Prendas con estilo, buena presencia y una identidad alejada de las
+                grandes cadenas.
+              </p>
+            </article>
+
+            <article class="feature-card" data-reveal>
+              <span class="feature-index">02</span>
+              <h3>Trato verdaderamente cercano</h3>
+              <p>
+                La experiencia se apoya en la escucha, el consejo sincero y una
+                atenci&oacute;n mucho m&aacute;s humana.
+              </p>
+            </article>
+
+            <article class="feature-card" data-reveal>
+              <span class="feature-index">03</span>
+              <h3>Compra tranquila y agradable</h3>
+              <p>
+                Un ambiente cuidado que invita a entrar, mirar con calma y decidir
+                con confianza.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section details" id="visita">
+          <div class="details-panel">
+            <div class="section-heading compact" data-reveal>
+              <p class="eyebrow">Informaci&oacute;n pr&aacute;ctica</p>
+              <h2>Todo listo para visitar la tienda.</h2>
+            </div>
+
+            <div class="details-grid">
+              <article class="hours-card" data-reveal>
+                <h3>Horario comercial</h3>
+                <ul class="hours-list">
+                  <li><span>Lunes</span><span>17:30 - 20:00</span></li>
+                  <li><span>Martes</span><span>10:00 - 14:00 / 17:30 - 20:00</span></li>
+                  <li><span>Mi&eacute;rcoles</span><span>10:00 - 14:00 / 17:30 - 20:00</span></li>
+                  <li><span>Jueves</span><span>10:00 - 14:00 / 17:30 - 20:00</span></li>
+                  <li><span>Viernes</span><span>10:00 - 14:00 / 17:30 - 20:00</span></li>
+                  <li><span>S&aacute;bado</span><span>11:00 - 14:00</span></li>
+                  <li><span>Domingo</span><span>Cerrado</span></li>
+                </ul>
+              </article>
+
+              <article class="contact-card" data-reveal>
+                <h3>Contacto y ubicaci&oacute;n</h3>
+                <p>
+                  Calle d'Albacete, 13<br />
+                  Distrito de Extramurs<br />
+                  46007 Valencia
+                </p>
+                <a class="contact-link" href="tel:+34963707409">+34 963 70 74 09</a>
+                <a
+                  class="button primary full"
+                  href="https://www.google.com/maps/search/?api=1&query=Calle%20d'Albacete%2013%2046007%20Valencia"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Abrir en Google Maps
+                </a>
+              </article>
+
+              <article class="contact-card soft" data-reveal>
+                <h3>La promesa de SIMARASTORE</h3>
+                <p>
+                  Moda femenina con criterio, cercan&iacute;a y una experiencia de compra
+                  que proyecta valor desde el primer momento.
+                </p>
+                <a
+                  class="button secondary full"
+                  href="tel:+34963707409"
+                  aria-label="Llamar al +34 963 70 74 09"
+                >
+                  Llamar ahora
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>SIMARASTORE &middot; Boutique de moda femenina en Valencia</p>
+        <p><span id="current-year"></span> &middot; Imagen digital premium para comercio local.</p>
+      </footer>
+    </div>
+  </body>
+</html>
