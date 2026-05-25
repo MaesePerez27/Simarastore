@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 820" role="img" aria-labelledby="title desc">
+  <title id="title">Logo de SIMARASTORE</title>
+  <desc id="desc">Wordmark elegante de SIMARA STORE sobre fondo gris oscuro.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#5c5b56" />
+      <stop offset="52%" stop-color="#494742" />
+      <stop offset="100%" stop-color="#706f6a" />
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#f7efee" />
+      <stop offset="100%" stop-color="#eee3e2" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.3" />
+    </filter>
+  </defs>
+
+  <rect width="820" height="820" rx="16" fill="url(#bg)" />
+  <path
+    d="M0 140C140 100 260 88 402 104c108 12 204 40 418 122V0H0v140Z"
+    fill="rgba(255,255,255,0.05)"
+  />
+
+  <g fill="url(#shine)">
+    <text
+      x="40"
+      y="430"
+      font-family="'Bodoni MT', Didot, 'Times New Roman', serif"
+      font-size="176"
+      font-weight="500"
+      letter-spacing="2"
+    >
+      SIMARA
+    </text>
+    <text
+      x="46"
+      y="560"
+      font-family="'Helvetica Neue', Arial, sans-serif"
+      font-size="64"
+      font-weight="300"
+      letter-spacing="18"
+    >
+      STORE
+    </text>
+  </g>
+
+  <g filter="url(#softGlow)" opacity="0.08">
+    <text
+      x="42"
+      y="432"
+      font-family="'Bodoni MT', Didot, 'Times New Roman', serif"
+      font-size="176"
+      font-weight="500"
+      letter-spacing="2"
+      fill="#ffffff"
+    >
+      SIMARA
+    </text>
+  </g>
+</svg>
